@@ -1,0 +1,17 @@
+/* здесь используйте глобальные переменные */
+// Цвета
+$basic-white: #ffffff;
+$basic-black: #333333;
+$basic-purple: #7859cf;
+$secondary-purple: #9070ec;
+$basic-light-gray: #e2e2e2;
+$secondary-light-gray: #f8f8f8;
+$basic-gray: #bdbdbd;
+
+// Шрифт
+$montserrat-font: "Montserrat", "Arial", sans-serif;
+
+// Ширина экранов
+$mobile-width-only: (max-width: 767px);
+$tablet-width-only: ((min-width: 768px) and (max-width: 1365px));
+$desktop-width-only: (min-width: 1366px);
