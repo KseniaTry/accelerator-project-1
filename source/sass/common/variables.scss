@@ -6,9 +6,11 @@ $basic-dark: #102654;
 $secondary-dark: #1c3374;
 $footer-background:#030a1a;
 $akcent: #103aae;
-$button-tab: #d10a42;
-$banner: #ed0233;
+$button-gradient-blue: #003eb7;
+$primary-red: #d10a42; // button tab
+$secondary-red: #ed0233; // баннер, градиент кнопки
 $form-error: #ff121f;
+$blackout: rgba(20, 54, 122, 0.5);
 
 $gradient-dark: #003D85;
 $gradient-light: #B80027;
@@ -18,3 +20,8 @@ $mobile-width-max: 767px;
 $tablet-width-min: 768px;
 $tablet-width-max: 1365px;
 $desktop-width-min: 1366px;
+
+// ширина контента
+$mobile-content-width: 290px;
+$tablet-content-width: 679px;
+$desktop-content-width: 1160px;

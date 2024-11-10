@@ -1,0 +1,24 @@
+.button {
+  display: block;
+
+  padding: 22px;
+
+  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button--primary {
+  color: $basic-light;
+  background-color: transparent;
+  border: 2px solid $basic-light;
+}
+
+.button--secondary {
+  color: $basic-dark;
+  background-color: transparent;
+  border: 2px solid $basic-dark;
+}

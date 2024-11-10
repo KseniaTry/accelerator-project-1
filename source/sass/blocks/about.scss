@@ -1,0 +1,235 @@
+.about {
+  @media (max-width: $mobile-width-max) {
+    margin: 40px 0;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: relative; // для видео
+    width: $tablet-content-width;
+    margin: 60px auto 120px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    display: flex;
+    gap: 145px;
+    position: relative; // для видео
+    width: $desktop-content-width;
+    margin: 120px auto 240px;
+    text-align: left;
+  }
+}
+
+.about__main-container {
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-max) {
+    width: $mobile-content-width;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 504px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: 355px;
+  }
+}
+
+.about__title {
+  margin: 0;
+
+  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 12px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 25px;
+
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+}
+
+.about__text {
+  margin: 0;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 36px;
+
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 36px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 95px;
+
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.about__description-container {
+  margin-bottom: 36px;
+}
+
+.about__description-container p {
+  margin: 0;
+
+  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 504px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.about__description-container p:last-child {
+  @media (max-width: $mobile-width-max) {
+    display: none;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    display: none;
+  }
+}
+
+.about__image {
+  display: block;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 36px;
+  }
+}
+
+.about__video-container {
+  background-image: url("../../img/about/video-preview@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: $mobile-width-max) {
+    position: relative;
+    width: 320px;
+    height: 170px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(204px) translateY(85px);
+    width: 270px;
+    height: 170px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(400px) translateY(100px);
+    width: 360px;
+    height: 230px;
+  }
+}
+
+// фон для видео
+.about__video-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $blackout;
+  z-index: 1;
+}
+
+.about__video {
+  display: none;
+}
+
+// кнопка play
+.about__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background-image: linear-gradient(to left, $button-gradient-blue, $secondary-red);
+
+  @media (min-width: $desktop-width-min) {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+// обводка вокруг кнопки
+.about__play::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 72px;
+  height: 72px;
+  background-color: transparent;
+  border: 2px solid $secondary-red;
+  border-radius: 50%;
+  opacity: 20%;
+
+  @media (min-width: $desktop-width-min) {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+// треугольник
+.about__play::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid $basic-light;
+  border-bottom: 5px solid transparent;
+}
