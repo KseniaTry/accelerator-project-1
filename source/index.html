@@ -121,26 +121,32 @@
     </section>
 
     <section class="games" data-test="games">
-      <h2 class="visually-hidden">Мероприятия</h2>
-      <h3 class="games__title">Super Games</h3>
-      <p class="games__description">Ежегодные соревнования по CrossFit</p>
+      <div class="games__main-container">
+        <h2 class="visually-hidden">Мероприятия</h2>
+        <div class="games__secondary-container">
+          <h3 class="games__title">Super Games</h3>
 
-      <div class="games__date-container">
-        <p class="games__details-title">Дата</p>
-        <div class="games__details-container">
-          <span class="games__date-day">7</span>
-          <span class="games__date-month">Марта</span>
-          <span class="games__date-year">2019</span>
+          <div class="games__date-container games__date-container--date">
+            <p class="games__details-title">Дата</p>
+            <div class="games__time-container">
+              <span class="games__date-day">7</span>
+              <div class="games__month-year-container">
+                <span class="games__date">Марта</span>
+                <span class="games__date">2019</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="games__date-container games__date-container--time">
+            <p class="games__details-title">Время</p>
+            <time class="games__time" datetime="2019-03-07T12:00">12:00</time>
+          </div>
         </div>
+
+        <p class="games__description">Ежегодные соревнования по CrossFit</p>
+
+        <a class="games__application button button--primary" href="#">Заполнить заявку</a>
       </div>
-
-      <div class="games__time-container">
-        <p class="games__details-title">Время</p>
-        <time class="games__time" datetime="2019-03-07T12:00">12:00</time>
-      </div>
-
-      <a class="games__application button" href="#">Заполнить заявку</a>
-
       <picture>
         <source media="(min-width: 1366px)" width="660" height="500" type="image/webp"
           srcset="img/games/man-in-game-desktop@1x.webp 1x, img/games/man-in-game-desktop@2x.webp 2x">
