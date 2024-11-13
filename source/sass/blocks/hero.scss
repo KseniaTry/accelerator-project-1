@@ -25,7 +25,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 270px 1fr;
     padding: 30px 72px 120px;
     width: $desktop-content-width;
   }
@@ -160,11 +160,15 @@
     grid-column: 3 / 4;
     grid-row: 1 / 4;
     margin-left: 4px;
+    width: 324px;
+    height: 390px;
   }
 
   @media (min-width: $desktop-width-min) {
     grid-column: 3 / 4;
     grid-row: 1 / 4;
     margin-left: 56px;
+    width: 500px;
+    height: 524px;
   }
 }
