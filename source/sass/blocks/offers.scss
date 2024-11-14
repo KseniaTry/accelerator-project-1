@@ -1,0 +1,206 @@
+.offers {
+  @media (max-width: $mobile-width-max) {
+    margin: 40px auto;
+    text-align: center;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: $tablet-content-width;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: $desktop-content-width;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto 174px;
+    column-gap: 40px;
+    row-gap: 30px;
+  }
+}
+
+.offers__title {
+  margin: 0;
+  font-family: "Alumni Sans SemiBold", "Arial, sans-serif";
+  text-align: center;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 100%;
+    margin-bottom: 35px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 40px;
+    grid-column: 1 / 3;
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.offers__card {
+  margin: 0 auto;
+  padding: 20px;
+  border: 7px solid blue;
+  border-image: linear-gradient(to bottom right, #D10A42, #00359F);
+  border-image-slice: 1;
+
+  @media (max-width: $mobile-width-max) {
+    width: $mobile-content-width;
+    margin-bottom: 30px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: 100%;
+    height: 174px;
+    align-self: self-end;
+  }
+
+  h3 {
+    margin: 0;
+    font-family: $main-font-bold;
+    font-size: 22px;
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet-width-min) {
+      font-size: 26px;
+      line-height: 26px;
+      margin-bottom: 10px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-family: $main-font-light;
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin-bottom: 30px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.offers__card--main {
+  padding: 0;
+  border: none;
+  background-color: $secondary-red;
+  color: $basic-light;
+
+  @media (max-width: $mobile-width-max) {
+    width: 320px;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    width: $tablet-content-width;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    grid-row: 2 / 4;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  h3 {
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 28px;
+    }
+
+    @media (min-width: $tablet-width-min) {
+      font-size: 26px;
+      line-height: 26px;
+    }
+  }
+
+  h3 span:last-child {
+    display: block;
+
+    @media (max-width: $mobile-width-max) {
+      margin-top: 6px;
+      font-size: 64px;
+      line-height: 64px;
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin-top: 20px;
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+
+  p {
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 28px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin-bottom: auto;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+}
+
+.offers__container {
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-width-max) {
+    padding: 30px 0;
+    width: 260px;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    padding: 40px 25px;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    padding: 40px 45px;
+    width: 280px;
+    margin: 0;
+  }
+}
+
+.offers__details {
+}
+
+.offers__image {
+  display: block;
+}
