@@ -1,0 +1,282 @@
+.faq {
+  background-color: $secondary-light;
+
+  @media (max-width: $mobile-width-max) {
+    padding: 70px 0;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    padding: 100px 0;
+  }
+
+
+}
+
+.faq__title {
+  margin: 0 auto;
+  text-align: center;
+  font-family: $secondary-font-semibold;
+
+  @media (max-width: $mobile-width-max) {
+    width: $mobile-content-width;
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: $tablet-content-width;
+    margin-bottom: 45px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: $desktop-content-width;
+    margin-bottom: 50px;
+    font-size: 54px;
+    line-height: 54px;
+    text-align: start;
+  }
+}
+
+.faq__tabs {
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-max) {
+    width: $mobile-content-width;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    width: $tablet-content-width;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: $desktop-content-width;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+}
+
+// кнопки
+.faq__buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 35px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.faq__tab-button {
+  border: 2px solid rgba(16, 38, 84, 0.2);
+  background-color: transparent;
+  color: $basic-dark;
+
+  @media (max-width: $mobile-width-max) {
+    width: 140px;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    width: 162px;
+    padding: 18px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: 260px;
+  }
+}
+
+.faq__tab-button--active {
+  border-width: 2px;
+  border-image: linear-gradient(to right, $secondary-red, $button-gradient-blue);
+  border-image-slice: 1;
+  background-image: linear-gradient(to right, $secondary-red, $button-gradient-blue);
+  color: $basic-light;
+}
+
+// вопросы и ответы
+.faq__tab-content {
+  @media (min-width: $desktop-width-min) {
+    width: 860px;
+  }
+}
+
+.faq__tab-pane {
+  display: none;
+}
+
+.faq__tab-pane--active {
+  display: block;
+}
+
+.faq__tab-item {
+  @media (max-width: $mobile-width-max) {
+    margin: 21px 0;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin: 32px 0;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin: 31px 0;
+  }
+
+  h3 {
+    position: relative;
+    margin: 0;
+    padding-right: 75px;
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin-bottom: 32px;
+      font-size: 22px;
+      line-height: 22px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      margin-bottom: 31px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    border: 1px solid $basic-dark;
+    border-radius: 50%;
+    background-image: url("/__spritemap#sprite-plus-view");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $mobile-width-max) {
+      padding: 8px;
+      width: 30px;
+      height: 30px;
+      background-size: 14px 14px;
+      transform: translateY(5px);
+    }
+
+    @media (min-width: $tablet-width-min) {
+      padding: 10px;
+      width: 40px;
+      height: 40px;
+      background-size: 20px 20px;
+      transform: translateY(-10px);
+    }
+  }
+
+  p {
+    display: none;
+  }
+}
+
+
+.faq__tab-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #74819C;
+}
+
+.faq__tab-item:first-child::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #74819C;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 21px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 31px;
+  }
+}
+
+.faq__tab-item:first-child {
+  margin-top: 0;
+}
+
+.faq__tab-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq__tab-item--active {
+  h3 {
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 20px;
+    }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin-bottom: 19px;
+    }
+  }
+
+  h3::after {
+    background-image: url("/__spritemap#sprite-minus-view");
+    background-color: $basic-dark;
+  }
+
+  p {
+    display: block;
+    margin: 0;
+    font-family: $main-font-light;
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 20px;
+      padding-right: 52px;
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin-bottom: 23px;
+      padding-right: 118px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      padding-right: 200px;
+    }
+  }
+}

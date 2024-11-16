@@ -309,9 +309,7 @@
   content: "";
   display: block;
   position: absolute;
-
   background: url("/__spritemap#sprite-ruble-icon-view") center no-repeat;
-  // background: url("../../img/sprite/spritemap.svg#sprite-reddit-icon-view") center no-repeat;
 
   @media (max-width: $mobile-width-max) {
     width: 24px;
