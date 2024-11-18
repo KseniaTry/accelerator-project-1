@@ -133,6 +133,11 @@
 }
 
 .faq__tab-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
   @media (max-width: $mobile-width-max) {
     margin: 21px 0;
   }
@@ -146,11 +151,10 @@
   }
 
   h3 {
-    position: relative;
     margin: 0;
-    padding-right: 75px;
 
     @media (max-width: $mobile-width-max) {
+      width: 238px;
       margin-bottom: 20px;
       font-size: 20px;
       line-height: 20px;
@@ -169,13 +173,7 @@
     }
   }
 
-  h3::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 8px;
+  button {
     border: 1px solid $basic-dark;
     border-radius: 50%;
     background-image: url("/__spritemap#sprite-plus-view");
@@ -184,19 +182,19 @@
     background-position: center;
 
     @media (max-width: $mobile-width-max) {
+      margin-bottom: 20px;
       padding: 8px;
       width: 30px;
       height: 30px;
       background-size: 14px 14px;
-      transform: translateY(5px);
     }
 
     @media (min-width: $tablet-width-min) {
+      margin-bottom: 32px;
       padding: 10px;
       width: 40px;
       height: 40px;
       background-size: 20px 20px;
-      transform: translateY(-10px);
     }
   }
 
@@ -253,7 +251,7 @@
     }
   }
 
-  h3::after {
+ button {
     background-image: url("/__spritemap#sprite-minus-view");
     background-color: $basic-dark;
   }

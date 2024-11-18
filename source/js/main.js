@@ -1,12 +1,38 @@
 // https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
+import Swiper from "swiper";
+import { Navigation, Pagination } from "swiper/modules";
+import 'swiper/css';
 
+
+// слайдер блок Жюри
+const juriSlider = document.querySelector('.juri__swiper');
+
+new Swiper(juriSlider, {
+  modules: [Navigation, Pagination],
+  slidesPerView: 1,
+  spaceBetween: 0,
+  loop: true,
+  navigation: {
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+    clickable: true,
+  },
+  breakpoints: {
+    769: {
+        slidesPerView: 2,
+        spaceBetween: 40,
+        allowTouchMove: false,
+    },
+    1366: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+        allowTouchMove: false,
+    },
+}
+});
 
 // блок FAQ
 const faqButtonsContainer = document.querySelector(".faq__buttons-container");
-const faqTabContent = document.querySelector(".faq__tab-content");
 const faqTabItems = document.querySelectorAll(".faq__tab-item");
 
 // нажатие кнопок с выбором категории (центр, абонемент и тд)
@@ -31,9 +57,9 @@ faqButtonsContainer.addEventListener('click', evt => {
 
 // нажатие кнопки + для открытия ответа на вопрос
 faqTabItems.forEach((faqTabItem) => {
-  const question = faqTabItem.querySelector("h3");
+  const faqButton = faqTabItem.querySelector("button");
 
-  question.addEventListener("click", () => {
+  faqButton.addEventListener("click", () => {
     if (faqTabItem.classList.contains("faq__tab-item--active")) {
       faqTabItem.classList.remove("faq__tab-item--active");
     } else {

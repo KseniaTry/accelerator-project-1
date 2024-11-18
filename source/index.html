@@ -166,9 +166,9 @@
 
     <section class="juri" data-test="juri">
       <h2 class="juri__title">Жюри</h2>
-      <div class="juri__slider-container">
-        <div class="juri__slider">
-          <article class="juri__card juri__card--closed">
+      <div class="juri__swiper swiper">
+        <div class="juri__swiper-wrapper swiper-wrapper ">
+          <div class="juri__card juri__card--closed swiper-slide ">
             <h3 class="juri__name">Анна Павлова</h3>
             <picture>
               <source width="260" height="300" type="image/webp"
@@ -185,8 +185,8 @@
                 <li class="juri__advantages-item">Опыт — 4 года</li>
               </ul>
             </div>
-          </article>
-          <article class="juri__card juri__card--closed">
+          </div>
+          <div class="juri__card juri__card--closed swiper-slide ">
             <h3 class="juri__name">Алексей Лавров</h3>
             <picture>
               <source width="260" height="300" type="image/webp"
@@ -203,8 +203,8 @@
                 <li class="juri__advantages-item">Опыт — 6 лет</li>
               </ul>
             </div>
-          </article>
-          <article class="juri__card juri__card--closed">
+          </div>
+          <div class="juri__card juri__card--closed swiper-slide ">
             <h3 class="juri__name">Александр Пашков</h3>
             <picture>
               <source width="260" height="300" type="image/webp"
@@ -221,8 +221,8 @@
                 <li class="juri__advantages-item">Опыт — 10 лет</li>
               </ul>
             </div>
-          </article>
-          <article class="juri__card juri__card--closed">
+          </div>
+          <div class="juri__card juri__card--closed swiper-slide">
             <h3 class="juri__name">Мария Кетова</h3>
             <picture>
               <source width="260" height="300" type="image/webp"
@@ -239,8 +239,8 @@
                 <li class="juri__advantages-item">Опыт — 7 лет</li>
               </ul>
             </div>
-          </article>
-          <article class="juri__card juri__card--closed">
+          </div>
+          <div class="juri__card juri__card--closed swiper-slide">
             <h3 class="juri__name">Анна Павлова</h3>
             <picture>
               <source width="260" height="300" type="image/webp"
@@ -257,8 +257,8 @@
                 <li class="juri__advantages-item">Опыт — 4 года</li>
               </ul>
             </div>
-          </article>
-          <article class="juri__card juri__card--closed">
+          </div>
+          <div class="juri__card juri__card--closed swiper-slide">
             <h3 class="juri__name">Алексей Лавров</h3>
             <picture>
               <source width="260" height="300" type="image/webp"
@@ -275,8 +275,8 @@
                 <li class="juri__advantages-item">Опыт — 6 лет</li>
               </ul>
             </div>
-          </article>
-          <article class="juri__card juri__card--closed">
+          </div>
+          <div class="juri__card juri__card--closed swiper-slide">
             <h3 class="juri__name">Александр Пашков</h3>
             <picture>
               <source width="260" height="300" type="image/webp"
@@ -293,8 +293,8 @@
                 <li class="juri__advantages-item">Опыт — 10 лет</li>
               </ul>
             </div>
-          </article>
-          <article class="juri__card juri__card--closed">
+          </div>
+          <div class="juri__card juri__card--closed swiper-slide">
             <h3 class="juri__name">Мария Кетова</h3>
             <picture>
               <source width="260" height="300" type="image/webp"
@@ -311,15 +311,13 @@
                 <li class="juri__advantages-item">Опыт — 7 лет</li>
               </ul>
             </div>
-          </article>
+          </div>
         </div>
+      </div>
 
-        <div class="juri__buttons-container">
-          <button class="juri__button juri__button--prev" type="button" aria-label="Посмотреть предыдущий слайд"><span
-              class="visually-hidden">Назад</span></button>
-          <button class="juri__button juri__button--next" type="button" aria-label="Посмотреть следующий слайд"><span
-              class="visually-hidden">Вперед</span></button>
-        </div>
+      <div class="juri__buttons-container">
+        <div class="juri__button juri__button--prev swiper-button-prev"></div>
+        <div class="juri__button juri__button--next swiper-button-next"></div>
       </div>
     </section>
 
@@ -426,6 +424,7 @@
           <div class="faq__tab-pane faq__tab-pane--active" id="tab1">
             <div class="faq__tab-item faq__tab-item--active">
               <h3>Как стать членом фитнес-центра?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке
                 абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.
               </p>
@@ -433,6 +432,7 @@
 
             <div class="faq__tab-item">
               <h3>Где можно посмотреть расписание?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном
                 сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на
                 почту каждую неделю.
@@ -441,6 +441,7 @@
 
             <div class="faq__tab-item">
               <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>В центре есть несколько кулеров. Полотенца предоставляются и входят в стоимость
                 абонемента.
               </p>
@@ -448,6 +449,7 @@
 
             <div class="faq__tab-item">
               <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>В нашем центре работает 15 тренеров, которые специализируются на разных направлениях. Все тренеры
                 сертифицированы, проходят регулярное обучение.</p>
             </div>
@@ -456,6 +458,7 @@
           <div class="faq__tab-pane" id="tab2">
             <div class="faq__tab-item faq__tab-item--active">
               <h3>Занятия с тренером входят в абонемент?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером
                 отдельно.
                 В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую
@@ -465,16 +468,19 @@
 
             <div class="faq__tab-item">
               <h3>Можно ли заморозить абонемент?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Да, опция заморозки доступна и зависит от типа приоретенного абонемента.</p>
             </div>
 
             <div class="faq__tab-item">
               <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Лимит отсутствует. Занимайтесь на здоровье!</p>
             </div>
 
             <div class="faq__tab-item">
               <h3>Что такое семейный доступ и доступ для друзей?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>ааааа</p>
             </div>
           </div>
@@ -482,23 +488,27 @@
           <div class="faq__tab-pane" id="tab3">
             <div class="faq__tab-item faq__tab-item--active">
               <h3>Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу.
                 Специалист уточнит ваши данные, цели и предложит программу питания.</p>
             </div>
 
             <div class="faq__tab-item">
               <h3>Проводятся ли в клубе какие-либо мероприятия  или соревнования?</h3>
+                <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Да. Вся информация доступна на сайте, также можно узнать о проводимых мероприятиях у менеджера при
                 входе в фитнес-зал.</p>
             </div>
 
             <div class="faq__tab-item">
               <h3>Можно ли приобрести в центре спортивное питание?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Да. В Центре работает магазин спортивного питания. Находится на 1 этаже при входе.</p>
             </div>
 
             <div class="faq__tab-item">
               <h3>Есть ли в центре детская комната?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Да.</p>
             </div>
           </div>
@@ -506,6 +516,7 @@
           <div class="faq__tab-pane" id="tab4">
             <div class="faq__tab-item faq__tab-item--active">
               <h3>Есть в фитнес-центре дресс-код?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь
                 и
                 одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки,
@@ -515,16 +526,19 @@
 
             <div class="faq__tab-item">
               <h3>Можно ли приводить с собой детей на тренировки?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Можно приводить детей только на специальные занятия, которые проводятся совместно с детьми.</p>
             </div>
 
             <div class="faq__tab-item">
               <h3>Какие дополнительные правила посещения центра?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>аллал</p>
             </div>
 
             <div class="faq__tab-item">
               <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+              <button type="button"><span class="visually-hidden">Кнопка раскрытия/ закрытия ответа на вопрос</span></button>
               <p>Для посещения зала справка не нужна, а для посещения бассейна - обязательна.</p>
             </div>
           </div>
@@ -534,7 +548,7 @@
     </section>
 
     <section class="reviews" data-test="reviews">
-      <h2>Отзывы</h2>
+      <h2 class="reviews__title">Отзывы</h2>
       <div class="reviews__slider-container">
         <div class="reviews__slider">
           <ul>
@@ -644,6 +658,7 @@
     </ul>
   </footer>
 
+  <script src="js/vendor/swiper-bundle.js"></script>
   <script type="module" src="js/main.js"></script>
 </body>
 

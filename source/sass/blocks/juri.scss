@@ -5,11 +5,13 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: relative;
     margin: 30px auto 60px;
     width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width-min) {
+    position: relative;
     margin: 100px auto;
     width: $desktop-content-width;
   }
@@ -33,45 +35,15 @@
   }
 }
 
-.juri__slider-container {
-  position: relative; // для кнопок
-}
-
-.juri__slider {
-  @media (min-width: $tablet-width-min) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-  }
-}
-
-.juri__card {
-  position: relative;
-  width: 260px;
-  height: 300px;
-
-  @media (max-width: $mobile-width-max) {
-    margin: 0 auto;
-  }
-}
-
-.juri__card:not(:first-child) {
-  @media (max-width: $mobile-width-max) {
-    display: none;
-  }
-}
-
-.juri__card:not(:nth-child(-n+2)) {
+.juri__swiper {
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    display: none;
+    width: 560px;
   }
-}
 
-.juri__card:not(:nth-child(-n+4)) {
   @media (min-width: $desktop-width-min) {
-    display: none;
+    width: $desktop-content-width;
   }
+
 }
 
 .juri__card--opened::after {
@@ -116,6 +88,10 @@
 
 .juri__image {
   display: block;
+  width: 260px;
+  height: 300px;
+  object-fit: cover;
+  margin: 0 auto;
 }
 
 // обратная сторона карточки
@@ -129,7 +105,7 @@
   margin-top: 76px;
 }
 
-.juri__card--closed > .juri__extra-info-container {
+.juri__card--closed>.juri__extra-info-container {
   display: none;
 }
 
@@ -163,7 +139,11 @@
   align-items: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) translateY(50px);
+
+  @media (max-width: $mobile-width-max) {
+    display: none;
+  }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: $tablet-content-width;
