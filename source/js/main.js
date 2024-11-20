@@ -4,6 +4,30 @@ import { Navigation, Pagination } from "swiper/modules";
 import 'swiper/css';
 
 
+// слайдер блок Отзывы
+const reviewsSlider = document.querySelector('.reviews__swiper');
+
+new Swiper(reviewsSlider, {
+  modules: [Navigation, Pagination],
+  slidesPerView: 'auto',
+  loop: false,
+  navigation: {
+    prevEl: '.reviews__button--prev',
+    nextEl: '.reviews__button--next',
+    clickable: true,
+  },
+  breakpoints: {
+    769: {
+        allowTouchMove: false,
+    },
+    1366: {
+        allowTouchMove: false,
+    },
+}
+});
+
+
+
 // слайдер блок Жюри
 const juriSlider = document.querySelector('.juri__swiper');
 
@@ -12,9 +36,10 @@ new Swiper(juriSlider, {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
+
   navigation: {
-    prevEl: '.swiper-button-prev',
-    nextEl: '.swiper-button-next',
+    prevEl: '.juri__button--prev',
+    nextEl: '.juri__button--next',
     clickable: true,
   },
   breakpoints: {
