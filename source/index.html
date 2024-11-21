@@ -581,7 +581,7 @@
             <blockquote>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
               тренажёры обновляют,
               персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</blockquote>
-        </div>
+          </div>
           <div class="reviews__card swiper-slide">
             <div>
               <picture>
@@ -614,7 +614,8 @@
       </div>
 
       <div class="reviews__buttons-container">
-        <button class="reviews__button reviews__button--prev swiper-button-prev" type="button" aria-label="Посмотреть предыдущий слайд">
+        <button class="reviews__button reviews__button--prev swiper-button-prev" type="button"
+          aria-label="Посмотреть предыдущий слайд">
           <span class="visually-hidden">Назад</span></button>
         <button class="reviews__button reviews__button--next swiper-button-next" type="button"
           aria-label="Посмотреть следующий слайд"><span class="visually-hidden">Вперед</span></button>
@@ -622,38 +623,43 @@
     </section>
 
     <section class="registration" data-test="form">
-      <h2 class="registration__title">Бесплатное занятие</h2>
-      <form class="registration__form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="registration__name-input" type="text" id="name" name="name" placeholder="Имя" required>
-        <label class="registration__label" for="name">Имя</label>
+      <div class="registration__form-container">
+        <form class="registration__form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="registration__title">Бесплатное занятие</h2>
 
-        <input class="registration__phone-input" type="tel" id="phone" name="phone" placeholder="Телефон" required>
-        <label class="registration__label" for="phone">Телефон</label>
+          <div class="registration__inputs-container">
+          <input class="registration__input" type="text" id="name" name="name" placeholder="Имя" required>
+          <label class="registration__label" for="name">Имя</label>
 
-        <button class="registration__form-send button" type="submit">Отправить</button>
-      </form>
+          <input class="registration__input" type="tel" id="phone" name="phone" placeholder="Телефон" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+          <label class="registration__label" for="phone">Телефон</label>
+        </div>
 
-      <section class="registration__contacts contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">Адрес:</h3>
-            <address class="contacts__description">г. Омск, ул. 60 лет Октября, 7</address>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">График работы:</h3>
-            <p class="contacts__description">Пн-Вс: с 8:00 до 22:00</p>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">Телефон:</h3>
-            <a class="contacts__description" href="tel:+78005555555">8 800 555-55-55</a>
-          </li>
-          <li class="contacts__item">
-            <h3 class="contacts__item-title">Email:</h3>
-            <a class="contacts__description" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-          </li>
-        </ul>
-      </section>
+          <button class="registration__form-send button button--primary" type="submit">Отправить</button>
+        </form>
+      </div>
+
+        <section class="registration__contacts contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Адрес:</h3>
+              <address class="contacts__item-description">г. Омск, ул. 60 лет Октября, 7</address>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">График работы:</h3>
+              <p class="contacts__item-description">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Телефон:</h3>
+              <a class="contacts__item-description" href="tel:+78005555555">8 800 555-55-55</a>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Email:</h3>
+              <a class="contacts__item-description" href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+            </li>
+          </ul>
+        </section>
     </section>
   </main>
 
