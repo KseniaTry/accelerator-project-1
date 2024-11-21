@@ -14,12 +14,58 @@
   color: $basic-light;
   background-color: transparent;
   border: 2px solid $basic-light;
+
+  &:hover {
+    background-color: $basic-light;
+    color: $akcent;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: $akcent;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    background-color: $basic-light;
+    color: $basic-dark;
+  }
+
+  &:disabled {
+    opacity: 50%;
+  }
 }
 
 .button--secondary {
   color: $basic-dark;
   background-color: transparent;
   border: 2px solid $basic-dark;
+
+  &:hover {
+    background-image: linear-gradient(to right, #ED0233, #003EB7);
+    color: $basic-light;
+    border: 2px solid #ED0233;
+    border-image: linear-gradient(to right, #ED0233, #003EB7);
+    border-image-slice: 1;
+  }
+
+  &:focus {
+    background-image: linear-gradient(to right, rgba(237, 2, 51, 0.8), rgba(0, 62, 183, 0.8));
+    color: $basic-light;
+    border: 2px solid #000000;
+  }
+
+  &:active {
+    background-image: linear-gradient(to right, #ED0233, #003EB7);
+    color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #ED0233;
+    border-image: linear-gradient(to right, #ED0233, #003EB7);
+    border-image-slice: 1;
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
 }
 
 // кнопка без обрамления
