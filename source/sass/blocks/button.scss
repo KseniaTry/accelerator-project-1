@@ -31,7 +31,8 @@
     color: $basic-dark;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 50%;
   }
 }
@@ -63,7 +64,8 @@
     border-image-slice: 1;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 30%;
   }
 }
