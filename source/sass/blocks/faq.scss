@@ -12,8 +12,6 @@
   @media (min-width: $desktop-width-min) {
     padding: 100px 0;
   }
-
-
 }
 
 .faq__title {
@@ -173,34 +171,66 @@
     }
   }
 
-  button {
-    border: 1px solid $basic-dark;
-    border-radius: 50%;
-    background-image: url("/__spritemap#sprite-plus-view");
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    @media (max-width: $mobile-width-max) {
-      margin-bottom: 20px;
-      padding: 8px;
-      width: 30px;
-      height: 30px;
-      background-size: 14px 14px;
-    }
-
-    @media (min-width: $tablet-width-min) {
-      margin-bottom: 32px;
-      padding: 10px;
-      width: 40px;
-      height: 40px;
-      background-size: 20px 20px;
-    }
-  }
-
   p {
     display: none;
   }
+}
+
+.faq__open-button {
+  position: relative;
+  border: 1px solid $secondary-dark;
+  border-radius: 50%;
+  background-color: transparent;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+    mask-size: 14px 14px;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    margin-bottom: 32px;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    background-size: 20px 20px;
+  }
+
+  &:hover {
+    background-color: $secondary-dark;
+  }
+
+  &:focus {
+    background-color: #74819C;
+    border-color: $secondary-dark;
+  }
+}
+
+.faq__open-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mask-image: url("/__spritemap#sprite-plus-view");
+  background-color: $secondary-dark;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  @media (min-width: $tablet-width-min) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.faq__open-button:focus::after,
+.faq__open-button:hover::after {
+  background-color: $basic-light;
 }
 
 
@@ -251,11 +281,6 @@
     }
   }
 
- button {
-    background-image: url("/__spritemap#sprite-minus-view");
-    background-color: $basic-dark;
-  }
-
   p {
     display: block;
     margin: 0;
@@ -276,5 +301,14 @@
     @media (min-width: $desktop-width-min) {
       padding-right: 200px;
     }
+  }
+
+  .faq__open-button {
+    background-color: $secondary-dark;
+  }
+
+  .faq__open-button::after {
+    mask-image: url("/__spritemap#sprite-minus-view");
+    background-color: $basic-light;
   }
 }
