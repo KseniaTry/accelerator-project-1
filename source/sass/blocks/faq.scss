@@ -206,6 +206,10 @@
     background-color: #74819C;
     border-color: $secondary-dark;
   }
+
+  &:disabled {
+    opacity: 30%;
+  }
 }
 
 .faq__open-button::after {
