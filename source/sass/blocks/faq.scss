@@ -84,7 +84,7 @@
 }
 
 .faq__tab-button {
-  border: 2px solid rgba(16, 38, 84, 0.2);
+  border: 1px solid rgba(16, 38, 84, 0.2);
   background-color: transparent;
   color: $basic-dark;
 
@@ -105,10 +105,24 @@
   @media (min-width: $desktop-width-min) {
     width: 260px;
   }
+
+  &:hover {
+    border: 1px solid $basic-dark;
+    background-color: transparent;
+  }
+
+  &:focus {
+    border: 1px solid $basic-dark;
+    background-color: $basic-light;
+  }
+
+  &:disabled {
+    color: #c8c9cc;
+  }
 }
 
 .faq__tab-button--active {
-  border-width: 2px;
+  border-width: 1px;
   border-image: linear-gradient(to right, $secondary-red, $button-gradient-blue);
   border-image-slice: 1;
   background-image: linear-gradient(to right, $secondary-red, $button-gradient-blue);

@@ -133,45 +133,11 @@
 
 // кнопки
 .juri__buttons-container {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) translateY(50px);
-
-  @media (max-width: $mobile-width-max) {
-    display: none;
-  }
-
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: $tablet-content-width;
+    width: 707px;
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 1270px;
+    width: 1298px;
   }
-}
-
-.juri__button {
-  @media (max-width: $mobile-width-max) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width-min) {
-    border: none;
-    background-color: $basic-dark;
-    width: 16px;
-    height: 32px;
-  }
-}
-
-.juri__button--next {
-  mask: url("/__spritemap#sprite-slider-arrow-next-view") center no-repeat;
-}
-
-.juri__button--prev {
-  mask: url("/__spritemap#sprite-slider-arrow-next-view") center no-repeat;
-  transform: rotate(180deg);
 }

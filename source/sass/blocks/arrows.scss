@@ -1,0 +1,68 @@
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(40px);
+
+  @media (max-width: $mobile-width-max) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    transform: translate(-50%, -50%) translateY(30px);
+  }
+}
+
+.arrows__button {
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+
+  @media (max-width: $mobile-width-max) {
+    display: none;
+  }
+
+  &:hover {
+    border: 1px solid $basic-dark;
+  }
+
+  &:focus {
+    background-color: #e8e8e8;
+    border: 1px solid $basic-dark;
+  }
+
+  &:active {
+    background-color: $basic-dark;
+    border: 1px solid $basic-dark;
+  }
+
+  &:disabled {
+    opacity: 30%;
+  }
+}
+
+.arrows__button::after {
+  mask-position: center;
+  mask-size: 70%;
+  mask-repeat: no-repeat;
+  background-color: $basic-dark;
+}
+
+.arrows__button:active::after {
+  background-color: $basic-light;
+}
+
+.arrows__button--next::after {
+  mask-image: url("/__spritemap#sprite-slider-arrow-next-view");
+}
+
+.arrows__button--prev::after {
+  mask-image: url("/__spritemap#sprite-slider-arrow-next-view");
+  transform: rotate(180deg);
+}

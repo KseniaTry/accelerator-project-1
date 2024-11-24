@@ -138,46 +138,12 @@
 
 // кнопки
 .reviews__buttons-container {
-  position: absolute;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) translateY(50px);
-
-  @media (max-width: $mobile-width-max) {
-    display: none;
-  }
-
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width-min) {
     width: 768px;
-    transform: translate(-50%, -50%) translateY(30px);
   }
 }
 
-.reviews__button {
-  @media (max-width: $mobile-width-max) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width-min) {
-    border: none;
-    background-color: $basic-dark;
-    width: 16px;
-    height: 32px;
-  }
-}
-
-.reviews__button--next {
-  mask: url("/__spritemap#sprite-slider-arrow-next-view") center no-repeat;
-}
-
-.reviews__button--prev {
-  mask: url("/__spritemap#sprite-slider-arrow-next-view") center no-repeat;
-  transform: rotate(180deg);
-}
