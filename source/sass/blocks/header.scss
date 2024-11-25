@@ -1,5 +1,3 @@
-.header {}
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -22,10 +20,8 @@
   }
 }
 
-.header__logo-icon {}
-
 .header__phone-link {
-  font-family: "Roboto Condensed Bold";
+  font-family: $main-font-bold;
   color: $basic-light;
   text-decoration: none;
 

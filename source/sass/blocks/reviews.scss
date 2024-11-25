@@ -59,8 +59,8 @@
   color: $basic-light;
 
   @media (max-width: $mobile-width-max) {
-  padding: 30px 25px;
-  text-align: center;
+    padding: 30px 25px;
+    text-align: center;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -102,7 +102,7 @@
       line-height: 20px;
     }
 
-    @media (min-width: $tablet-width-min){
+    @media (min-width: $tablet-width-min) {
       margin-left: 120px;
       margin-bottom: 20px;
       font-size: 22px;

@@ -32,7 +32,7 @@
   }
 
   &:disabled,
-  &--disabled {
+  &-disabled {
     opacity: 50%;
   }
 }
@@ -43,10 +43,10 @@
   border: 2px solid $basic-dark;
 
   &:hover {
-    background-image: linear-gradient(to right, #ED0233, #003EB7);
+    background-image: linear-gradient(to right, #ed0233, #003eb7);
     color: $basic-light;
-    border: 2px solid #ED0233;
-    border-image: linear-gradient(to right, #ED0233, #003EB7);
+    border: 2px solid #ed0233;
+    border-image: linear-gradient(to right, #ed0233, #003eb7);
     border-image-slice: 1;
   }
 
@@ -57,15 +57,15 @@
   }
 
   &:active {
-    background-image: linear-gradient(to right, #ED0233, #003EB7);
+    background-image: linear-gradient(to right, #ed0233, #003eb7);
     color: rgba(255, 255, 255, 0.8);
-    border: 2px solid #ED0233;
-    border-image: linear-gradient(to right, #ED0233, #003EB7);
+    border: 2px solid #ed0233;
+    border-image: linear-gradient(to right, #ed0233, #003eb7);
     border-image-slice: 1;
   }
 
   &:disabled,
-  &--disabled {
+  &-disabled {
     opacity: 30%;
   }
 }
@@ -94,7 +94,7 @@
   }
 
   &:disabled,
-  &--disabled {
+  &-disabled {
     opacity: 50%;
   }
 }
@@ -108,7 +108,7 @@
   background-color: $basic-light;
 }
 
-.button-no-borders--primary:focus:after {
+.button-no-borders--primary:focus::after {
   content: "";
   display: block;
   position: absolute;
@@ -134,7 +134,7 @@
   }
 
   &:disabled,
-  &--disabled {
+  &-disabled {
     opacity: 30%;
   }
 }
@@ -148,7 +148,7 @@
   background-color: $secondary-dark;
 }
 
-.button-no-borders--secondary:focus:after {
+.button-no-borders--secondary:focus::after {
   content: "";
   display: block;
   position: absolute;

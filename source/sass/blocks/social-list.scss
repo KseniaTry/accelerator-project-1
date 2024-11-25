@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  @media (max-width: $mobile-width-max ) {
+  @media (max-width: $mobile-width-max) {
     gap: 20px;
   }
 
@@ -27,31 +27,21 @@
 }
 
 .social-list__item:hover {
-  background-color: #74819C;
-
-  &>.social-list__link {
-    background-color: $basic-light;
-  }
+  background-color: #74819c;
 }
 
-.social-list__item:hover>.social-list__link {
+.social-list__item:hover > .social-list__link,
+.social-list__item:focus > .social-list__link,
+.social-list__item:active > .social-list__link {
   background-color: $basic-light;
 }
 
 .social-list__item:focus {
-  background-color: #103AAE;
-
-  &>.social-list__link {
-    background-color: $basic-light;
-  }
+  background-color: #103aae;
 }
 
 .social-list__item:active {
   background-color: $basic-dark;
-
-  &>.social-list__link {
-    background-color: $basic-light;
-  }
 }
 
 .social-list__item--disabled {

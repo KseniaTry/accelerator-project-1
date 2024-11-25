@@ -2,7 +2,7 @@
   margin: 0;
   font-family: $secondary-font-semibold;
 
-  @media (max-width: $mobile-width-max ) {
+  @media (max-width: $mobile-width-max) {
     margin-bottom: 42px;
     font-size: 32px;
     line-height: 32px;
@@ -37,7 +37,7 @@
       transform: translate(-50%, -50%);
       width: 1px;
       height: 117px;
-      background-color: #74819C;
+      background-color: #74819c;
     }
   }
 

@@ -1,6 +1,6 @@
 // https://swiperjs.com/get-started#installation
-import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 // слайдер блок Отзывы
@@ -54,11 +54,11 @@ new Swiper(juriSlider, {
 });
 
 // блок FAQ
-const faqButtonsContainer = document.querySelector(".faq__buttons-container");
-const faqTabItems = document.querySelectorAll(".faq__tab-item");
+const faqButtonsContainer = document.querySelector('.faq__buttons-container');
+const faqTabItems = document.querySelectorAll('.faq__tab-item');
 
 // нажатие кнопок с выбором категории (центр, абонемент и тд)
-faqButtonsContainer.addEventListener('click', evt => {
+faqButtonsContainer.addEventListener('click', (evt) => {
   const faqTabPaneId = evt.target.dataset.tab;
   const faqTabPane = document.getElementById(faqTabPaneId);
   const faqEvtButton = evt.target;
@@ -79,14 +79,14 @@ faqButtonsContainer.addEventListener('click', evt => {
 
 // нажатие кнопки + для открытия ответа на вопрос
 faqTabItems.forEach((faqTabItem) => {
-  const faqButton = faqTabItem.querySelector("button");
+  const faqButton = faqTabItem.querySelector('button');
 
-  faqButton.addEventListener("click", () => {
-    if (faqTabItem.classList.contains("faq__tab-item--active")) {
-      faqTabItem.classList.remove("faq__tab-item--active");
+  faqButton.addEventListener('click', () => {
+    if (faqTabItem.classList.contains('faq__tab-item--active')) {
+      faqTabItem.classList.remove('faq__tab-item--active');
     } else {
-      faqTabItem.classList.add("faq__tab-item--active");
+      faqTabItem.classList.add('faq__tab-item--active');
     }
   });
-})
+});
 

@@ -28,7 +28,7 @@
 
 .features__title {
   margin: 0;
-  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
+  font-family: $secondary-font-semibold;
   text-align: center;
 
   @media (max-width: $mobile-width-max) {
@@ -110,7 +110,7 @@
 
 .features__list p span:first-child {
   display: block;
-  font-family: "Roboto Condensed Bold";
+  font-family: $main-font-bold;
   font-size: 60px;
   line-height: 60px;
   color: transparent;
@@ -149,7 +149,7 @@
 }
 
 .features__list p:last-child {
-  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  font-family: $main-font-light;
   line-height: 22px;
 
   @media (min-width: $tablet-width-min) {
@@ -195,7 +195,7 @@
 }
 
 .features__list li:nth-child(3) p span:last-child {
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-family: $main-font-bold;
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 20px;

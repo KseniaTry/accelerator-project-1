@@ -43,11 +43,10 @@
   @media (min-width: $desktop-width-min) {
     width: $desktop-content-width;
   }
-
 }
 
 .juri__card--opened::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -67,7 +66,7 @@
   text-align: center;
 }
 
-.juri__card--closed>.juri__name {
+.juri__card--closed > .juri__name {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -76,7 +75,7 @@
   width: 100%;
 }
 
-.juri__card--opened>.juri__name {
+.juri__card--opened > .juri__name {
   position: absolute;
   top: 0;
   left: 50%;
@@ -105,7 +104,7 @@
   margin-top: 76px;
 }
 
-.juri__card--closed>.juri__extra-info-container {
+.juri__card--closed > .juri__extra-info-container {
   display: none;
 }
 

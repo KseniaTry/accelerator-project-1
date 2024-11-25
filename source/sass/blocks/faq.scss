@@ -219,7 +219,7 @@
   }
 
   &:focus {
-    background-color: #74819C;
+    background-color: #74819c;
     border-color: $secondary-dark;
   }
 
@@ -259,7 +259,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #74819C;
+  background-color: #74819c;
 }
 
 .faq__tab-item:first-child::before {
@@ -267,7 +267,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  background-color: #74819C;
+  background-color: #74819c;
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 21px;
