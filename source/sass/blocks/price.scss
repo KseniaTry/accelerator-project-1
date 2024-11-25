@@ -134,7 +134,9 @@
   background-color: rgba(120, 120, 120, 0.2);
 }
 
+// кнопки переключения количества месяцев (1, 6, 12)
 .price__tab-item {
+  color: $basic-dark;
   opacity: 50%;
 }
 
@@ -153,6 +155,38 @@
   background-color: $primary-red;
 }
 
+.price__tab-item--current:hover::after {
+  background-color: #787878;
+}
+
+.price__tab-item--current:focus::after {
+  background-color: $basic-dark;
+}
+
+.price__tab-item--disabled::after {
+  opacity: 30%;
+  background-color: $basic-dark;
+}
+
+.price__tab-button {
+  color: $basic-dark;
+  border: none;
+  background-color: transparent;
+}
+
+.price__tab-item:hover .price__tab-button {
+  color: rgba(16, 38, 84, 0.7);
+}
+
+.price__tab-item:focus .price__tab-button {
+  color: $basic-dark;
+}
+
+.price__tab-item--disabled .price__tab-button {
+  opacity: 30%;
+}
+
+// карточки с описанием абонементов
 .price__tab-content {
   @media (min-width: $desktop-width-min) {
     display: flex;
