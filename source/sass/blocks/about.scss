@@ -128,10 +128,10 @@
 
 .about__video-container {
   background-image:
-  image-set(url("../../img/about/video-preview@1x.webp") type("image/webp") 1x,
-    url("../../img/about/video-preview@2x.webp") type("image/webp") 2x,
-    url("../../img/about/video-preview@1x.jpg") type("image/jpg") 1x,
-    url("../../img/about/video-preview@2x.jpg") type("image/jpg") 2x);
+    image-set(url("../../img/about/video-preview@1x.webp") type("image/webp") 1x,
+      url("../../img/about/video-preview@2x.webp") type("image/webp") 2x,
+      url("../../img/about/video-preview@1x.jpg") type("image/jpg") 1x,
+      url("../../img/about/video-preview@2x.jpg") type("image/jpg") 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -233,4 +233,41 @@
   border-top: 5px solid transparent;
   border-left: 10px solid $basic-light;
   border-bottom: 5px solid transparent;
+}
+
+// состояния кнопки
+.about__play:hover,
+.about__play:active,
+.about__play:disabled {
+  background-image: none;
+  background-color: $basic-light;
+}
+
+.about__play:hover::before {
+    border-left: 10px solid rgba(16, 38, 84, 0.6);
+}
+
+.about__play:hover::after {
+  border-color: rgba(16, 38, 84, 0.6);
+}
+
+.about__play:focus {
+  background-image: none;
+  background-color: #c8c9cc;
+}
+
+.about__play:focus::before,
+.about__play:active::before,
+.about__play:disabled::before {
+  border-left: 10px solid $basic-dark;
+}
+
+.about__play:focus::after,
+.about__play:active::after,
+.about__play:disabled::after {
+  border-color: $basic-dark;
+}
+
+.about__play:disabled {
+  opacity: 40%;
 }
