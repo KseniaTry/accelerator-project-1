@@ -74,6 +74,10 @@
   background-color: $basic-light;
 }
 
+.social-list__link:disabled {
+  opacity: 30%;
+}
+
 .social-list__link--vk {
   mask-image: url("/__spritemap#sprite-vk-icon-view");
   mask-size: 12px 7px;
