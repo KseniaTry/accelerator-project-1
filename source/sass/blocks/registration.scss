@@ -72,7 +72,8 @@
 .registration__input {
   display: block;
   width: 100%;
-  padding-bottom: 5px;
+  padding: 0;
+  padding-bottom: 4px;
   margin-bottom: 36px;
 
   background-color: transparent;
@@ -80,6 +81,8 @@
   border-bottom: 1px solid #74819c;
   color: $basic-light;
   font-family: $main-font-light;
+  font-size: 14px;
+  line-height: 22px;
 
   @media (min-width: $tablet-width-min) {
     width: 205px;
@@ -96,13 +99,12 @@
 
 .registration__form-send {
   width: 100%;
-  padding: 25px;
 }
 
 // Контакты
 .registration__contacts {
   @media (max-width: $mobile-width-max) {
-    margin: 40px auto;
+    margin: 37px auto;
     width: $mobile-content-width;
   }
 

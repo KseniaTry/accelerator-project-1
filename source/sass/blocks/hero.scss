@@ -10,7 +10,7 @@
   @media (max-width: $mobile-width-max) {
     grid-template-columns: repeat(2, 1fr);
     width: $mobile-content-width;
-    padding: 48px 0 32px;
+    padding: 51px 0 31px;
     column-gap: 21px;
   }
 
@@ -51,16 +51,17 @@
 
 .hero__title {
   margin: 0;
-  font-family: "Alumni Sans ExtraBold", "Arial", sans-serif;
+  font-family: $secondary-font-extrabold;
   text-transform: uppercase;
   text-align: right;
+  letter-spacing: 1px;
 
   @media (max-width: $mobile-width-max) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
 
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 62px;
+    line-height: 62px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {

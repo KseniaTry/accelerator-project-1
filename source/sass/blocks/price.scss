@@ -99,7 +99,7 @@
   align-items: center;
 
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 
     font-size: 16px;
     line-height: 16px;
@@ -126,7 +126,7 @@
   content: "";
   position: absolute;
   display: block;
-  bottom: -10px;
+  bottom: -8px;
   height: 2px;
   width: 100%;
   background-color: rgba(120, 120, 120, 0.2);
@@ -147,7 +147,7 @@
   content: "";
   position: absolute;
   display: block;
-  bottom: -10px;
+  bottom: -8px;
   height: 2px;
   width: 100%;
   background-color: $primary-red;
@@ -167,6 +167,7 @@
 }
 
 .price__tab-button {
+  padding: 0;
   color: $basic-dark;
   border: none;
   background-color: transparent;
@@ -245,7 +246,7 @@
   font-family: "Roboto Condensed Light", "Arial", sans-serif;
 
   @media (max-width: $mobile-width-max) {
-    margin-bottom: 66px;
+    margin-bottom: 75px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -272,7 +273,7 @@
 
   @media (max-width: $mobile-width-max) {
     width: 206px;
-    margin-bottom: 18px;
+    margin-bottom: 29px;
     padding-left: 37px; // подрегулировать на ПП
 
     font-size: 48px;
@@ -298,6 +299,7 @@
   }
 }
 
+// цена серым цветом background-ом
 .price__item-price::before {
   content: attr(data-price);
   position: absolute;
@@ -312,7 +314,7 @@
   @media (max-width: $mobile-width-max) {
     width: 206px;
     height: 120px;
-    bottom: -15px;
+    bottom: -11px;
 
     font-size: 80px;
     line-height: 120px;
@@ -337,6 +339,7 @@
   }
 }
 
+// знак рубля
 .price__item-price::after {
   content: "";
   display: block;
@@ -346,8 +349,8 @@
   @media (max-width: $mobile-width-max) {
     width: 24px;
     height: 33px;
-    top: 8px;
-    right: 30px; // подрегулировать на ПП
+    top: 10px;
+    right: 37px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -363,4 +366,8 @@
     top: 24px;
     right: 32px;
   }
+}
+
+.price__item-buy {
+padding: 25px;
 }

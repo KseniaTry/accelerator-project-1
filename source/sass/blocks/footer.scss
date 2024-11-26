@@ -17,6 +17,7 @@
   @media (max-width: $mobile-width-max) {
     gap: 30px;
     width: $mobile-content-width;
+    align-items: flex-start;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -29,9 +30,6 @@
 }
 
 .footer__logo-icon {
-  @media (max-width: $mobile-width-max) {
-    width: 100%;
-  }
 }
 
 .footer__services-list {
@@ -39,19 +37,21 @@
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 
   @media (max-width: $mobile-width-max) {
     width: 100%;
+    gap: 17px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    justify-content: space-between;
     width: 392px;
     gap: 30px;
   }
 
   @media (min-width: $desktop-width-min) {
+    justify-content: space-between;
     width: 600px;
     gap: 82px;
   }
@@ -59,8 +59,7 @@
 
 .footer__services-item {
   @media (max-width: $mobile-width-max) {
-    margin-right: 35px;
-    margin-bottom: 20px;
+    margin-right: 19px;
   }
 }
 
