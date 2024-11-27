@@ -151,7 +151,7 @@
 
   p:first-child {
     @media (max-width: $mobile-width-max) {
-    margin-bottom: 12px;
+      margin-bottom: 12px;
     }
   }
 
@@ -163,7 +163,7 @@
       font-size: 16px;
       line-height: 24px;
     }
-}
+  }
 }
 
 // выделяющийся блок
@@ -199,7 +199,13 @@
   }
 
   p span:first-child {
-    margin-bottom: 25px;
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 7px;
+    }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      margin-bottom: 25px;
+    }
   }
 
   p span:last-child {
@@ -223,7 +229,8 @@
     }
   }
 
-  h3, p {
+  h3,
+  p {
     margin: 0 auto;
 
     @media (max-width: $mobile-width-max) {

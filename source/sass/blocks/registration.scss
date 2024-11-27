@@ -98,7 +98,10 @@
 
 .registration__form-send {
   width: 100%;
+
+  @media (min-width: $tablet-width-min) {
   padding: 25px;
+  }
 }
 
 // Контакты
