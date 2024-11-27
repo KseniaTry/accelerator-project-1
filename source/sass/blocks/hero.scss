@@ -39,7 +39,7 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     align-self: center;
-    margin-top: 50px; // подрегулировать на ПП
+    margin-top: 55px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -54,7 +54,6 @@
   font-family: $secondary-font-extrabold;
   text-transform: uppercase;
   text-align: right;
-  letter-spacing: 1px;
 
   @media (max-width: $mobile-width-max) {
     grid-column: 2 / 3;
@@ -62,6 +61,7 @@
 
     font-size: 62px;
     line-height: 62px;
+    letter-spacing: 1px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -70,6 +70,7 @@
 
     font-size: 72px;
     line-height: 85px;
+    letter-spacing: 2px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -138,7 +139,7 @@
     grid-row: 3 / 4;
     margin-top: 50px;
     margin-bottom: 31px;
-
+padding: 20px;
     // подумать что делать с высотой кнопки
   }
 

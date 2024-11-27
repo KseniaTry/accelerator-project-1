@@ -88,7 +88,7 @@
       width: 324px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      align-items: flex-start;
       gap: 15px;
     }
 
@@ -115,6 +115,12 @@
     color: transparent;
     background-clip: text;
     background-image: radial-gradient(at top left, $primary-red 1%, $text-gradient-dark 50%);
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      font-size: 70px;
+      line-height: 70px;
+    }
+
   }
 
   p span:last-child {
@@ -144,7 +150,9 @@
   }
 
   p:first-child {
+    @media (max-width: $mobile-width-max) {
     margin-bottom: 12px;
+    }
   }
 
   p:last-child {
@@ -172,7 +180,7 @@
     grid-row: 2 / 3;
     align-self: center;
     margin: 0 auto;
-    padding: 30px 35px 35px;
+    padding: 36px 35px 35px;
     width: 320px;
     text-align: center;
   }
@@ -191,7 +199,7 @@
   }
 
   p span:first-child {
-    margin-bottom: 6px;
+    margin-bottom: 25px;
   }
 
   p span:last-child {

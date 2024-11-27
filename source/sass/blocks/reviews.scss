@@ -139,7 +139,8 @@
 // кнопки
 .reviews__buttons-container {
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: $tablet-content-width;
+    width: 732px;
+    transform: translate(-50%, -50%) translateY(42px);
   }
 
   @media (min-width: $desktop-width-min) {

@@ -12,7 +12,7 @@
     margin: 60px auto;
   }
 
-  @media (min-width: $tablet-width-min) {
+  @media (min-width: $desktop-width-min) {
     margin: 100px auto;
   }
 }
@@ -50,7 +50,7 @@
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     column-gap: 20px;
     row-gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -93,13 +93,19 @@
   }
 
   @media (min-width: $tablet-width-min) {
-    margin-bottom: 10px;
+    margin-bottom: 11px;
     font-size: 18px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width-min) {
     margin-bottom: 30px;
+  }
+}
+
+.games__application {
+  @media (min-width: $tablet-width-min) {
+    padding: 24px;
   }
 }
 
@@ -142,6 +148,7 @@
   @media (min-width: $tablet-width-min) {
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 2px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -155,6 +162,10 @@
   height: 1px;
   background-color: $basic-light;
   margin-top: 2px;
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-top: 1px;
+  }
 }
 
 .games__time-container {

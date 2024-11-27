@@ -40,8 +40,8 @@
     display: block;
     width: 275px;
     height: 328px;
-    bottom: 0;
-    right: -2%;
+    bottom: 13px;
+    right: -13px;
     z-index: -1;
     background-image:
       image-set(url("../../img/price/weights@1x.webp") type("image/webp") 1x,
@@ -107,7 +107,7 @@
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: 310px;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
 
     font-size: 18px;
     line-height: 18px;

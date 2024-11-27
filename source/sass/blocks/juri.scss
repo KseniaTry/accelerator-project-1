@@ -29,6 +29,7 @@
   }
 
   @media (min-width: $tablet-width-min) {
+    padding-top: 30px;
     margin-bottom: 46px;
     font-size: 54px;
     line-height: 54px;
@@ -133,7 +134,7 @@
 // кнопки
 .juri__buttons-container {
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: 707px;
+    width: 721px;
   }
 
   @media (min-width: $desktop-width-min) {

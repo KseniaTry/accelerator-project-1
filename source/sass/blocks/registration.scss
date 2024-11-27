@@ -18,7 +18,6 @@
 
   @media (min-width: $tablet-width-min) {
     padding: 60px 0;
-    width: 683px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -99,6 +98,7 @@
 
 .registration__form-send {
   width: 100%;
+  padding: 25px;
 }
 
 // Контакты

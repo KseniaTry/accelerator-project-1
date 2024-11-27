@@ -5,7 +5,7 @@
   align-items: center;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) translateY(40px);
+  transform: translate(-50%, -50%) translateY(61px);
 
   @media (max-width: $mobile-width-max) {
     display: none;
@@ -49,7 +49,7 @@
 
 .arrows__button::after {
   mask-position: center;
-  mask-size: 70%;
+  mask-size: 78%;
   mask-repeat: no-repeat;
   background-color: $basic-dark;
 }
