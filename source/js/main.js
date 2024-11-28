@@ -1,4 +1,3 @@
-// https://swiperjs.com/get-started#installation
 import Swiper from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -77,11 +76,9 @@ faqButtonsContainer.addEventListener('click', (evt) => {
   }
 });
 
-// нажатие кнопки + для открытия ответа на вопрос
+// нажатие на вопрос и кнопку для открытия ответа на вопрос
 faqTabItems.forEach((faqTabItem) => {
-  const faqButton = faqTabItem.querySelector('button');
-
-  faqButton.addEventListener('click', () => {
+  faqTabItem.addEventListener('click', () => {
     if (faqTabItem.classList.contains('faq__tab-item--active')) {
       faqTabItem.classList.remove('faq__tab-item--active');
     } else {
@@ -89,4 +86,10 @@ faqTabItems.forEach((faqTabItem) => {
     }
   });
 });
+
+// Блок Абонементы
+// Стоимость абонементов меняется при выборе:
+
+// 6 месяцев: 30 000/10 200/16 200;
+// 12 месяцев: 60 000/20 400/32 400.
 
