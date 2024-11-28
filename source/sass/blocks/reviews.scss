@@ -90,7 +90,7 @@
     width: 100%;
     height: auto;
     object-fit: cover;
-    transform: scale(1.6) translateY(7px) translateX(-2px);
+    transform: scale(1.6) translateY(9px) translateX(-2px);
   }
 
   h3 {
@@ -122,7 +122,7 @@
       min-height: 154px;
     }
 
-    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    @media (min-width: $tablet-width-min) {
       min-height: 120px;
       margin-left: 120px;
       font-size: 16px;
@@ -144,7 +144,8 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 768px;
+    width: 822px;
+    transform: translate(-50%, -50%) translateY(61px);
   }
 }
 

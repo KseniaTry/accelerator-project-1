@@ -1,3 +1,17 @@
+.contacts {
+  @media (max-width: $mobile-width-max) {
+    margin: 37px auto;
+  }
+
+  @media ((min-width: $tablet-width-min)  and (max-width: $tablet-width-max)) {
+    margin: 60px auto;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    padding: 60px 103px 71px;
+  }
+}
+
 .contacts__title {
   margin: 0;
   font-family: $secondary-font-semibold;
@@ -13,6 +27,10 @@
     font-size: 54px;
     line-height: 54px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    text-align: start;
   }
 }
 

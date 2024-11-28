@@ -35,7 +35,7 @@
 
   @media (min-width: $desktop-width-min) {
     width: $desktop-content-width;
-    margin-bottom: 50px;
+    margin-bottom: 51px;
     font-size: 54px;
     line-height: 54px;
     text-align: start;
@@ -133,6 +133,7 @@
 .faq__tab-content {
   @media (min-width: $desktop-width-min) {
     width: 860px;
+    margin-top: -1px;
   }
 }
 
@@ -159,7 +160,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin: 31px 0;
+    margin: 23px 0;
   }
 
   h3 {
@@ -180,8 +181,8 @@
     }
 
     @media (min-width: $desktop-width-min) {
+      display: inline-block;
       width: 660px;
-      margin-bottom: 31px;
       font-size: 24px;
       line-height: 24px;
     }
@@ -192,6 +193,95 @@
   }
 }
 
+.faq__tab-item:first-child {
+  margin-top: 0;
+}
+
+.faq__tab-item:last-child {
+  margin-bottom: 0;
+}
+
+// состояние открытого ответа на вопрос
+.faq__tab-item--active {
+  h3 {
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 20px;
+    }
+  }
+
+  p {
+    display: block;
+    margin: 0;
+    font-family: $main-font-light;
+    font-size: 16px;
+    line-height: 20px;
+
+    @media (max-width: $mobile-width-max) {
+      margin-bottom: 20px;
+      padding-right: 52px;
+    }
+
+    @media (min-width: $tablet-width-min) {
+      margin-top: 10px;
+      padding-right: 118px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @media (min-width: $desktop-width-min) {
+      padding-right: 200px;
+      margin-top: 23px;
+    }
+  }
+
+  .faq__open-button {
+    background-color: $secondary-dark;
+  }
+
+  .faq__open-button::after {
+    mask-image: url("/__spritemap#sprite-minus-view");
+    background-color: $basic-light;
+  }
+}
+
+// полоски над и под вопросом
+.faq__tab-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #74819c;
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-top: 22px;
+  }
+}
+
+.faq__tab-item:first-child::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #74819c;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 21px;
+  }
+
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-bottom: 22px;
+  }
+}
+
+// кнопка открытия/ закрытия ответа на вопрос
 .faq__open-button {
   position: relative;
   border: 1px solid $secondary-dark;
@@ -249,89 +339,4 @@
 .faq__open-button:focus::after,
 .faq__open-button:hover::after {
   background-color: $basic-light;
-}
-
-
-.faq__tab-item::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #74819c;
-}
-
-.faq__tab-item + .faq__tab-item::after {
-  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-  margin-top: 23px;
-  }
-}
-
-.faq__tab-item:first-child::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #74819c;
-
-  @media (max-width: $mobile-width-max) {
-    margin-bottom: 21px;
-  }
-
-  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin-bottom: 23px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    margin-bottom: 31px;
-  }
-}
-
-.faq__tab-item:first-child {
-  margin-top: 0;
-}
-
-.faq__tab-item:last-child {
-  margin-bottom: 0;
-}
-
-.faq__tab-item--active {
-  h3 {
-    @media (max-width: $mobile-width-max) {
-      margin-bottom: 20px;
-    }
-  }
-
-  p {
-    display: block;
-    margin: 0;
-    font-family: $main-font-light;
-    font-size: 16px;
-    line-height: 20px;
-
-    @media (max-width: $mobile-width-max) {
-      margin-bottom: 20px;
-      padding-right: 52px;
-    }
-
-    @media (min-width: $tablet-width-min) {
-      margin-top: 10px;
-      margin-bottom: 23px;
-      padding-right: 118px;
-      font-size: 18px;
-      line-height: 24px;
-    }
-
-    @media (min-width: $desktop-width-min) {
-      padding-right: 200px;
-    }
-  }
-
-  .faq__open-button {
-    background-color: $secondary-dark;
-  }
-
-  .faq__open-button::after {
-    mask-image: url("/__spritemap#sprite-minus-view");
-    background-color: $basic-light;
-  }
 }

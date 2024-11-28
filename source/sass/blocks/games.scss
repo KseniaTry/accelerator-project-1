@@ -55,8 +55,8 @@
 
   @media (min-width: $desktop-width-min) {
     column-gap: 77px;
-    row-gap: 20px;
-    margin-bottom: 30px;
+    row-gap: 3px;
+    margin-bottom: 29px;
   }
 }
 
@@ -99,13 +99,17 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 }
 
 .games__application {
   @media (min-width: $tablet-width-min) {
     padding: 24px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    padding: 25px;
   }
 }
 
@@ -152,7 +156,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
 }
 
@@ -161,10 +165,17 @@
   display: block;
   height: 1px;
   background-color: $basic-light;
-  margin-top: 2px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-top: 2px;
+  }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     margin-top: 1px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin-top: 5px;
   }
 }
 
@@ -172,10 +183,17 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 3px;
+
+  @media (max-width: $mobile-width-max) {
+    gap: 3px;
+  }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     gap: 5px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    gap: 6px;
   }
 }
 
@@ -212,6 +230,11 @@
   font-family: $main-font-bold;
   font-size: 24px;
   line-height: 24px;
+
+  @media (min-width: $desktop-width-min) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .games__image {
