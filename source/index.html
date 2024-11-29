@@ -656,11 +656,11 @@
           <h2 class="registration__title">Бесплатное занятие</h2>
 
           <div class="registration__inputs-container">
-            <input class="registration__input" type="text" id="name" name="name" placeholder="Имя" required>
+            <input class="registration__input" type="text" id="name" name="name" placeholder="Имя" pattern="^[a-zA-Zа-яА-Я\s]+$" required>
             <label class="registration__label" for="name">Имя</label>
 
             <input class="registration__input" type="tel" id="phone" name="phone" placeholder="Телефон"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              pattern="[0-9]{11}" required>
             <label class="registration__label" for="phone">Телефон</label>
           </div>
 

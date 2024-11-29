@@ -161,3 +161,12 @@ tabButtonList.forEach((button) => {
     previousActiveButton.classList.remove('price__tab-button--active');
   });
 });
+
+// Блок About (видео)
+const playButton = document.querySelector('.about__play');
+const video = document.querySelector('.about__video');
+
+playButton.addEventListener('click', () => {
+  video.style.display = 'block';
+  video.style.zIndex = 3;
+});
