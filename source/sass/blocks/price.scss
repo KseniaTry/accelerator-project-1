@@ -278,7 +278,8 @@
   color: $akcent;
 
   @media (max-width: $mobile-width-max) {
-    width: 206px;
+    max-width: 206px;
+    width: max-content;
     margin-bottom: 29px;
     padding-left: 37px; // подрегулировать на ПП
 
@@ -287,7 +288,8 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: 250px;
+    max-width: 250px;
+    width: max-content;
     padding-left: 42px;
     margin-bottom: 22px;
 
@@ -296,7 +298,8 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    width: 230px;
+    max-width: 230px;
+    width: max-content;
     padding-left: 32px;
     margin-bottom: 17px;
 
@@ -356,21 +359,14 @@
     width: 24px;
     height: 33px;
     top: 10px;
-    right: 37px;
+    right: -35px;
   }
 
-  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+  @media (min-width: $tablet-width-min) {
     width: 30px;
     height: 42px;
     top: 24px;
-    right: 42px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    width: 30px;
-    height: 42px;
-    top: 24px;
-    right: 32px;
+    right: -44px;
   }
 }
 
