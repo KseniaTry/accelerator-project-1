@@ -92,30 +92,30 @@
         <h2 class="price__title">Абонементы</h2>
         <div class="price__tabs">
           <ul class="price__tab-list">
-            <li class="price__tab-item price__tab-item--current">
-              <button class="price__tab-button" type="button">1 месяц</button>
+            <li class="price__tab-item">
+              <button class="price__tab-button price__tab-button--active" id="oneMonth" type="button">1 месяц</button>
             </li>
             <li class="price__tab-item">
-              <button class="price__tab-button" type="button">6 месяцев</button>
+              <button class="price__tab-button" id="sixMonth" type="button">6 месяцев</button>
             </li>
             <li class="price__tab-item">
-              <button class="price__tab-button" type="button">12 месяцев</button>
+              <button class="price__tab-button" id="twelveMonth" type="button">12 месяцев</button>
             </li>
           </ul>
           <div class="price__tab-content">
-            <div class="price__tab-content-item">
+            <div class="price__tab-content-item" data-type="trainer">
               <h3 class="price__item-title">С тренером</h3>
               <p class="price__item-text">13 занятий</p>
               <p class="price__item-price" data-price="5000">5000</p>
               <a class="price__item-buy button button--secondary" href="#">Купить абонемент</a>
             </div>
-            <div class="price__tab-content-item">
+            <div class="price__tab-content-item" data-type="day">
               <h3 class="price__item-title">Дневной</h3>
               <p class="price__item-text">с 8:00 до 17:00</p>
               <p class="price__item-price" data-price="1700">1700</p>
               <a class="price__item-buy button button--secondary" href="#">Купить абонемент</a>
             </div>
-            <div class="price__tab-content-item">
+            <div class="price__tab-content-item" data-type="fullday">
               <h3 class="price__item-title">Полный день</h3>
               <p class="price__item-text">с 8:00 до 22:00</p>
               <p class="price__item-price" data-price="2700">2700</p>

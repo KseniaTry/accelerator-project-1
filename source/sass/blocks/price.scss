@@ -136,12 +136,12 @@
   opacity: 50%;
 }
 
-.price__tab-item--current {
+.price__tab-button--active {
   position: relative;
   opacity: 100%;
 }
 
-.price__tab-item--current::after {
+.price__tab-button--active::after {
   content: "";
   position: absolute;
   display: block;
@@ -194,27 +194,35 @@
 .price__tab-content-item {
   background-color: $basic-light;
   text-align: center;
+  border: 7px solid transparent;
 
   @media (max-width: $mobile-width-max) {
-    padding: 50px 42px;
+    padding: 43px 35px;
     margin-bottom: 35px;
     width: 290px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    padding: 65px;
+    padding: 58px;
     margin-bottom: 40px;
     width: 380px;
   }
 
   @media (min-width: $desktop-width-min) {
-    padding: 65px;
+    padding: 58px;
     width: 360px;
   }
 }
 
 .price__tab-content-item:last-child {
   margin-bottom: 0;
+}
+
+.price__tab-content-item:hover,
+.price__tab-content-item:focus {
+  border: 7px solid #d10a42;
+  border-image: linear-gradient(to right, #d10a42, #00359f);
+  border-image-slice: 1;
 }
 
 .price__item-title {

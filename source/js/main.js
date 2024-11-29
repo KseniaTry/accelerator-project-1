@@ -88,8 +88,76 @@ faqTabItems.forEach((faqTabItem) => {
 });
 
 // Блок Абонементы
-// Стоимость абонементов меняется при выборе:
 
-// 6 месяцев: 30 000/10 200/16 200;
-// 12 месяцев: 60 000/20 400/32 400.
+const priceParameters = {
+  oneMonth: {
+    trainer: 5000,
+    day: 1700,
+    fullday: 2700,
+  },
+  sixMonth: {
+    trainer: 30000,
+    day: 10200,
+    fullday: 16200,
+  },
+  twelveMonth: {
+    trainer: 60000,
+    day: 20400,
+    fullday: 32400,
+  }
+};
 
+const CardTypes = {
+  TRAINER: 'trainer',
+  DAY: 'day',
+  FULLDAY: 'fullday',
+}
+
+const tabButtonList = document.querySelectorAll('.price__tab-button');
+const priceCardList = document.querySelectorAll('.price__tab-content-item');
+
+const updateCardPrice = (monthCount) => {
+  for (const [key, value] of Object.entries(priceParameters)) {
+    if (key === monthCount) {
+      priceCardList.forEach((card) => {
+        const price = card.querySelector('.price__item-price');
+
+        if (card.dataset.type === CardTypes.TRAINER) {
+          price.textContent = value.trainer;
+          price.dataset.price = value.trainer;
+        }
+
+        if (card.dataset.type === CardTypes.DAY) {
+          price.textContent = value.day;
+          price.dataset.price = value.day;
+        }
+
+        if (card.dataset.type === CardTypes.FULLDAY) {
+          price.textContent = value.fullday;
+          price.dataset.price = value.fullday;
+        }
+      })
+      break;
+    }
+  }
+};
+
+var activeButtonId = 'oneMonth';
+var previousActiveButtonId = '';
+
+// изменение цены на карточках при клике на кнопки
+tabButtonList.forEach((button) => {
+  button.addEventListener('click', (evt) => {
+    const monthCount = evt.target.id;
+
+    updateCardPrice(monthCount);
+
+    previousActiveButtonId = activeButtonId;
+    activeButtonId = monthCount;
+
+    button.classList.add('price__tab-button--active');
+
+    const previousActiveButton = document.getElementById(previousActiveButtonId);
+    previousActiveButton.classList.remove('price__tab-button--active');
+  });
+});
