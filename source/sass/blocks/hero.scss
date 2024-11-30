@@ -56,6 +56,7 @@
   font-weight: 800;
   text-transform: uppercase;
   text-align: right;
+  word-break: break-all;
 
   @media (max-width: $mobile-width-max) {
     grid-column: 2 / 3;
@@ -90,6 +91,7 @@
   font-family: $secondary-font;
   font-weight: 600;
   text-align: right;
+  word-break: break-all;
 
   @media (max-width: $mobile-width-max) {
     grid-column: 2 / 3;
