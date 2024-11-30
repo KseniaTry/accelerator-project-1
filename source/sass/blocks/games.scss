@@ -8,6 +8,7 @@
   @media (min-width: $tablet-width-min) {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: $tablet-content-width;
     margin: 60px auto;
   }
@@ -33,6 +34,7 @@
 
   @media (min-width: $desktop-width-min) {
     width: $desktop-content-width;
+    min-height: 500px;
     padding: 60px 80px;
   }
 }
