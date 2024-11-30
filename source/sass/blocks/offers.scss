@@ -17,7 +17,7 @@
     margin: 100px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto 174px;
+    grid-template-rows: auto auto minmax(174px, min-content);
     column-gap: 40px;
     row-gap: 30px;
   }
@@ -131,7 +131,7 @@
     }
 
     @media (min-width: $tablet-width-min) {
-      margin-bottom: auto;
+      margin-bottom: 40px;
     }
   }
 }
