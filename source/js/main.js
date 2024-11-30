@@ -15,7 +15,7 @@ new Swiper(reviewsSlider, {
     clickable: true,
   },
   breakpoints: {
-    769: {
+    768: {
       allowTouchMove: false,
     },
     1366: {
@@ -39,7 +39,7 @@ new Swiper(juriSlider, {
     clickable: true,
   },
   breakpoints: {
-    769: {
+    768: {
       slidesPerView: 2,
       spaceBetween: 40,
       allowTouchMove: false,
@@ -170,3 +170,17 @@ playButton.addEventListener('click', () => {
   video.style.display = 'block';
   video.style.zIndex = 3;
 });
+
+// Блок Жюри
+const juriCardsList = document.querySelectorAll('.juri__card');
+
+juriCardsList.forEach((juriCard) => {
+  juriCard.addEventListener('click', (evt) => {
+    const choosenJuriCard = evt.target.closest('.juri__card');
+
+    choosenJuriCard.classList.toggle('juri__card--closed');
+    choosenJuriCard.classList.toggle('juri__card--opened');
+  })
+})
+
+
