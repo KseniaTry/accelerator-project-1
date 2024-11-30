@@ -104,10 +104,15 @@
 
 .registration__form-send {
   width: 100%;
+  margin-bottom: 10px;
 
   @media (min-width: $tablet-width-min) {
     padding: 25px;
   }
+}
+
+.registration__form-send:last-child {
+  margin-bottom: 0;
 }
 
 // Контакты

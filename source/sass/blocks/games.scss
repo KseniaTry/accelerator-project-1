@@ -106,6 +106,8 @@
 }
 
 .games__application {
+  margin-bottom: 10px;
+
   @media (min-width: $tablet-width-min) {
     padding: 24px;
   }
@@ -113,6 +115,10 @@
   @media (min-width: $desktop-width-min) {
     padding: 25px;
   }
+}
+
+.games__application:last-child {
+  margin-bottom: 0;
 }
 
 .games__date-container {

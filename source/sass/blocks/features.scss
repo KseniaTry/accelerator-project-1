@@ -73,36 +73,30 @@
     row-gap: 82px;
     column-gap: 40px;
   }
+}
+
+.features__item {
+  @media (max-width: $mobile-width-max) {
+    width: 245px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $tablet-width-min) {
+    width: 324px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    width: 360px;
+    gap: 43px;
+  }
 
   p {
     margin: 0;
-  }
-
-  li {
-    @media (max-width: $mobile-width-max) {
-      width: 245px;
-      margin: 0 auto;
-      margin-bottom: 35px;
-    }
-
-    @media (min-width: $tablet-width-min) {
-      width: 324px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 15px;
-    }
-
-    @media (min-width: $desktop-width-min) {
-      width: 360px;
-      gap: 43px;
-    }
-  }
-
-  li:last-child {
-    @media (max-width: $mobile-width-max) {
-      margin-bottom: 0;
-    }
   }
 
   p span:first-child {
@@ -170,8 +164,14 @@
   }
 }
 
+.features__item:last-child {
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 0;
+  }
+}
+
 // выделяющийся блок
-.features__list li:nth-child(3) {
+.features__item--different {
   background-color: $secondary-dark;
   padding: 30px 75px 40px;
   color: $basic-light;
@@ -199,11 +199,23 @@
     text-align: center;
   }
 
-  p span {
-    color: $basic-light;
+  h3,
+  p {
+    margin: 0 auto;
+
+    @media (max-width: $mobile-width-max) {
+      width: 170px;
+    }
+
+    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+      width: 230px;
+    }
   }
 
   p span:first-child {
+    color: $basic-light;
+    background-image: none;
+
     @media (max-width: $mobile-width-max) {
       margin-bottom: 7px;
     }
@@ -219,6 +231,7 @@
   }
 
   p span:last-child {
+    color: $basic-light;
     font-family: $main-font;
     font-weight: 700;
 
@@ -237,19 +250,6 @@
       margin-bottom: 30px;
       font-size: 26px;
       line-height: 26px;
-    }
-  }
-
-  h3,
-  p {
-    margin: 0 auto;
-
-    @media (max-width: $mobile-width-max) {
-      width: 170px;
-    }
-
-    @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-      width: 230px;
     }
   }
 }

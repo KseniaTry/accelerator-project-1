@@ -226,6 +226,11 @@
 
 .offers__details {
   margin-bottom: -15px;
+  margin-right: 20px;
+}
+
+.offers__details:last-child {
+  margin-right: 0;
 }
 
 .offers__image {
