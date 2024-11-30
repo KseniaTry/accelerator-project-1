@@ -14,7 +14,8 @@
 
 .contacts__title {
   margin: 0;
-  font-family: $secondary-font-semibold;
+  font-family: $secondary-font;
+  font-weight: 600;
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 38px;

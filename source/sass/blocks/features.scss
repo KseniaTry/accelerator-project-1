@@ -28,7 +28,8 @@
 
 .features__title {
   margin: 0;
-  font-family: $secondary-font-semibold;
+  font-family: $secondary-font;
+  font-weight: 600;
   text-align: center;
 
   @media (max-width: $mobile-width-max) {
@@ -106,7 +107,8 @@
 
   p span:first-child {
     display: block;
-    font-family: $main-font-bold;
+    font-family: $main-font;
+    font-weight: 700;
     font-size: 64px;
     line-height: 64px;
     color: transparent;
@@ -157,7 +159,8 @@
   }
 
   p:last-child {
-    font-family: $main-font-light;
+    font-family: $main-font;
+    font-weight: 300;
     line-height: 22px;
 
     @media (min-width: $tablet-width-min) {
@@ -216,7 +219,8 @@
   }
 
   p span:last-child {
-    font-family: $main-font-bold;
+    font-family: $main-font;
+    font-weight: 700;
 
     @media (max-width: $mobile-width-max) {
       margin-bottom: 21px;

@@ -2,7 +2,8 @@
   display: block;
   padding: 22px;
 
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-family: $main-font;
+  font-weight: 700;
   font-size: 12px;
   line-height: 12px;
   text-transform: uppercase;
@@ -73,7 +74,8 @@
 // кнопка без обрамления
 .button-no-borders {
   display: inline-block;
-  font-family: $main-font-bold;
+  font-family: $main-font;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;

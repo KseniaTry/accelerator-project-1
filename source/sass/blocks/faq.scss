@@ -17,7 +17,8 @@
 .faq__title {
   margin: 0 auto;
   text-align: center;
-  font-family: $secondary-font-semibold;
+  font-family: $secondary-font;
+  font-weight: 600;
 
   @media (max-width: $mobile-width-max) {
     width: $mobile-content-width;
@@ -212,7 +213,8 @@
   p {
     display: block;
     margin: 0;
-    font-family: $main-font-light;
+    font-family: $main-font;
+    font-weight: 300;
     font-size: 16px;
     line-height: 20px;
 

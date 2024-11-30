@@ -65,7 +65,8 @@
 .price__title {
   margin: 0;
   text-align: center;
-  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
+  font-family: $secondary-font;
+  font-weight: 600;
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 30px;
@@ -96,6 +97,7 @@
   list-style-type: none;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
@@ -103,6 +105,7 @@
     margin-bottom: 38px;
     font-size: 16px;
     line-height: 16px;
+    gap: 45px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -110,6 +113,7 @@
     margin-bottom: 53px;
     font-size: 18px;
     line-height: 18px;
+    gap: 43px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -117,6 +121,7 @@
     margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
+    gap: 50px;
   }
 }
 
@@ -227,7 +232,8 @@
 
 .price__item-title {
   margin: 0;
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-family: $main-font;
+  font-weight: 700;
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 18px;
@@ -249,7 +255,8 @@
 
 .price__item-text {
   margin: 0;
-  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  font-family: $main-font;
+  font-weight: 300;
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 75px;
@@ -274,7 +281,8 @@
   margin: 0;
   text-align: left;
 
-  font-family: "Roboto Condensed Bold", "Arial", sans-serif;
+  font-family: $main-font;
+  font-weight: 700;
   color: $akcent;
 
   @media (max-width: $mobile-width-max) {

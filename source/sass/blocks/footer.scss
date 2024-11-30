@@ -67,7 +67,8 @@
   position: relative;
   text-decoration: none;
   color: $basic-light;
-  font-family: $main-font-regular;
+  font-family: $main-font;
+  font-weight: 400;
 }
 
 .footer__services-item-link:hover::after {

@@ -44,7 +44,8 @@
 
 .registration__title {
   margin: 0;
-  font-family: $secondary-font-semibold;
+  font-family: $secondary-font;
+  font-weight: 600;
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 36px;
@@ -83,7 +84,8 @@
   border: none;
   border-bottom: 1px solid #74819c;
   color: $basic-light;
-  font-family: $main-font-light;
+  font-family: $main-font;
+  font-weight: 300;
   font-size: 14px;
   line-height: 22px;
 

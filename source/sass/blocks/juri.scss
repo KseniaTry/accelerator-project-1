@@ -20,7 +20,8 @@
 .juri__title {
   margin: 0;
   text-align: center;
-  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
+  font-family: $secondary-font;
+  font-weight: 600;
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 20px;
@@ -119,7 +120,8 @@
   margin: 0;
   margin-bottom: 33px;
 
-  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  font-family: $main-font;
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
@@ -129,6 +131,8 @@
 .juri__advantages-list {
   margin: 0;
   padding: 0;
+  overflow: scroll;
+  height: 115px;
 }
 
 .juri__advantages-item {

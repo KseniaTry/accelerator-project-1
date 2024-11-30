@@ -38,7 +38,8 @@
 
 .about__title {
   margin: 0;
-  font-family: "Alumni Sans SemiBold", "Arial", sans-serif;
+  font-family: $secondary-font;
+  font-weight: 600;
 
   @media (max-width: $mobile-width-max) {
     margin-bottom: 12px;
@@ -90,7 +91,8 @@
 
 .about__description-container p {
   margin: 0;
-  font-family: "Roboto Condensed Light", "Arial", sans-serif;
+  font-family: $main-font;
+  font-weight: 300;
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: 504px;
