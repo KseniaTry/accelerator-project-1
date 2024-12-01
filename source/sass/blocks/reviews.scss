@@ -11,13 +11,20 @@
   }
 
   @media (min-width: $desktop-width-min) {
+padding: 100px 103px;
+  }
+}
+
+.reviews__main-container {
+  @media (min-width: $desktop-width-min) {
     position: relative;
-    margin: 100px auto;
+    margin: 0 auto;
     width: $desktop-content-width;
   }
 }
 
 .reviews__title {
+  margin: 0;
   font-family: $secondary-font;
   font-weight: 600;
   text-align: center;
@@ -35,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin-bottom: 75px;
+    margin-bottom: 73px;
   }
 }
 

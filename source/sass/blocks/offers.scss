@@ -13,8 +13,14 @@
   }
 
   @media (min-width: $desktop-width-min) {
+   padding: 100px 103px;
+  }
+}
+
+.offers__main-container {
+  @media (min-width: $desktop-width-min) {
     width: $desktop-content-width;
-    margin: 100px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto minmax(174px, min-content);
