@@ -70,7 +70,7 @@
   @media (min-width: $desktop-width-min) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 82px;
+    row-gap: 80px;
     column-gap: 40px;
   }
 }
@@ -90,8 +90,9 @@
   }
 
   @media (min-width: $desktop-width-min) {
+    position: relative;
     width: 360px;
-    gap: 42px;
+    gap: 43px;
   }
 
   p {
@@ -129,6 +130,7 @@
   h3 {
     margin: 0;
     margin-bottom: 12px;
+    font-weight: 400;
 
     @media (max-width: $mobile-width-max) {
       font-size: 18px;
@@ -164,6 +166,16 @@
       line-height: 24px;
     }
   }
+}
+
+.features__item:nth-child(1)::after,
+.features__item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  bottom: -42px;
+  width: 360px;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
 }
 
 .features__item:last-child {
