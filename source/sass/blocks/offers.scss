@@ -1,7 +1,6 @@
 .offers {
   @media (max-width: $mobile-width-max) {
-    margin: 40px auto;
-    text-align: center;
+    padding: 40px 0;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -14,6 +13,11 @@
 }
 
 .offers__main-container {
+  @media (max-width: $mobile-width-max) {
+    width: 100%;
+    text-align: center;
+  }
+
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: $tablet-content-width;
     margin: 0 auto;
@@ -69,7 +73,7 @@
     font-weight: 700;
 
     @media (max-width: $mobile-width-max) {
-      font-size: 22px;
+      font-size: 21px;
     }
 
     @media (min-width: $tablet-width-min) {
@@ -91,6 +95,12 @@
     @media (min-width: $tablet-width-min) {
       font-size: 16px;
     }
+  }
+}
+
+.offers__card:last-child {
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 0;
   }
 }
 
@@ -174,7 +184,7 @@
 
   h3 {
     @media (max-width: $mobile-width-max) {
-      margin-bottom: 28px;
+      margin-bottom: 27px;
     }
   }
 
@@ -196,7 +206,7 @@
 
   p {
     @media (max-width: $mobile-width-max) {
-      margin-bottom: 24px;
+      margin-bottom: 25px;
       font-size: 16px;
       line-height: 20px;
     }

@@ -1,6 +1,6 @@
 .about {
   @media (max-width: $mobile-width-max) {
-    margin: 40px 0;
+    padding: 40px 0;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -33,6 +33,7 @@
 .about__text-container {
   @media (max-width: $mobile-width-max) {
     width: $mobile-content-width;
+    margin: 0 auto;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -93,6 +94,10 @@
 
 .about__description-container {
   margin-bottom: 37px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 36px;
+  }
 }
 
 .about__description-container p {
@@ -102,7 +107,6 @@
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: 504px;
-
     font-size: 16px;
     line-height: 24px;
   }
@@ -135,12 +139,12 @@
 .about__video-container {
   background-image:
     image-set(url("../../img/about/video-preview@1x.webp") type("image/webp") 1x,
-    url("../../img/about/video-preview@2x.webp") type("image/webp") 2x,
-    url("../../img/about/video-preview@1x.jpg") type("image/jpg") 1x,
-    url("../../img/about/video-preview@2x.jpg") type("image/jpg") 2x);
+      url("../../img/about/video-preview@2x.webp") type("image/webp") 2x,
+      url("../../img/about/video-preview@1x.jpg") type("image/jpg") 1x,
+      url("../../img/about/video-preview@2x.jpg") type("image/jpg") 2x);
   background-repeat: no-repeat;
-  background-size: contain;
-background-position: center;
+  background-size: cover;
+  background-position: center;
 
   @media (max-width: $mobile-width-max) {
     position: relative;

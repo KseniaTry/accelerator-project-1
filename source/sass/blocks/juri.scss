@@ -1,7 +1,6 @@
 .juri {
   @media (max-width: $mobile-width-max) {
-    margin: 40px auto;
-    width: $mobile-content-width;
+    padding: 40px 15px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -10,21 +9,25 @@
   }
 
   @media (min-width: $desktop-width-min) {
-padding: 100px 103px;
+    padding: 100px 103px;
   }
 }
 
 .juri__main-container {
+  margin: 0 auto;
+
+  @media (max-width: $mobile-width-max) {
+    width: $mobile-content-width;
+  }
+
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     position: relative;
-    margin: 0 auto;
     width: $tablet-content-width;
   }
 
   @media (min-width: $desktop-width-min) {
-  position: relative;
-  margin: 0 auto;
-  width: $desktop-content-width;
+    position: relative;
+    width: $desktop-content-width;
   }
 }
 

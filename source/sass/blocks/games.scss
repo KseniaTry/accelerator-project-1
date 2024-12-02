@@ -2,7 +2,7 @@
   color: $basic-light;
 
   @media (max-width: $mobile-width-max) {
-    padding: 25px 0;
+    padding: 25px 15px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
@@ -16,6 +16,11 @@
 }
 
 .games__main-container {
+  @media (max-width: $mobile-width-max) {
+    width: $mobile-content-width;
+    margin: 0 auto;
+  }
+
   @media (min-width: $tablet-width-min) {
     display: flex;
     justify-content: center;
@@ -55,8 +60,8 @@
 
   @media (max-width: $mobile-width-max) {
     column-gap: 37px;
-    row-gap: 2px;
-    margin-bottom: 15px;
+    row-gap: 3px;
+    margin-bottom: 16px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
