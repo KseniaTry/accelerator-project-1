@@ -4,9 +4,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    position: relative; // для видео
-    width: $tablet-content-width;
-    margin: 60px auto 120px;
+    padding: 60px 45px 120px;
     text-align: center;
   }
 
@@ -17,6 +15,12 @@
 }
 
 .about__main-container {
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: relative; // для видео
+    width: $tablet-content-width;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width-min) {
     position: relative; // для видео
     display: flex;
@@ -33,6 +37,7 @@
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
     width: 504px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -74,7 +79,7 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    margin-bottom: 36px;
+    margin-bottom: 35px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -87,7 +92,7 @@
 }
 
 .about__description-container {
-  margin-bottom: 36px;
+  margin-bottom: 37px;
 }
 
 .about__description-container p {
@@ -134,8 +139,8 @@
     url("../../img/about/video-preview@1x.jpg") type("image/jpg") 1x,
     url("../../img/about/video-preview@2x.jpg") type("image/jpg") 2x);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+background-position: center;
 
   @media (max-width: $mobile-width-max) {
     position: relative;
@@ -150,6 +155,8 @@
     transform: translateX(204px) translateY(85px);
     width: 270px;
     height: 170px;
+    background-size: 290px 195px;
+    background-position: bottom -5px right -19px;
   }
 
   @media (min-width: $desktop-width-min) {

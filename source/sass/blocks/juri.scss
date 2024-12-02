@@ -5,9 +5,8 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    position: relative;
-    margin: 30px auto 60px;
-    width: $tablet-content-width;
+    padding: 30px 45px 60px;
+
   }
 
   @media (min-width: $desktop-width-min) {
@@ -16,9 +15,17 @@ padding: 100px 103px;
 }
 
 .juri__main-container {
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: relative;
+    margin: 0 auto;
+    width: $tablet-content-width;
+  }
+
+  @media (min-width: $desktop-width-min) {
   position: relative;
   margin: 0 auto;
   width: $desktop-content-width;
+  }
 }
 
 .juri__title {
@@ -34,7 +41,6 @@ padding: 100px 103px;
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    padding-top: 30px;
     margin-bottom: 46px;
     font-size: 54px;
     line-height: 54px;
@@ -148,8 +154,8 @@ padding: 100px 103px;
 // кнопки
 .juri__buttons-container {
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    width: 721px;
-    transform: translate(-50%, -50%) translateY(61px);
+    width: 720px;
+    transform: translate(-50%, -50%) translateY(47px);
   }
 
   @media (min-width: $desktop-width-min) {

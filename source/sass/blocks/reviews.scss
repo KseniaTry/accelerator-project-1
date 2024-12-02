@@ -5,17 +5,21 @@
   }
 
   @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
-    position: relative;
-    margin: 60px auto;
-    width: $tablet-content-width;
+    padding: 60px 45px;
   }
 
   @media (min-width: $desktop-width-min) {
-padding: 100px 103px;
+    padding: 100px 103px;
   }
 }
 
 .reviews__main-container {
+  @media ((min-width: $tablet-width-min) and (max-width: $tablet-width-max)) {
+    position: relative;
+    margin: 0 auto;
+    width: $tablet-content-width;
+  }
+
   @media (min-width: $desktop-width-min) {
     position: relative;
     margin: 0 auto;
@@ -103,6 +107,7 @@ padding: 100px 103px;
 
   h3 {
     margin: 0;
+    font-weight: 400;
 
     @media (max-width: $mobile-width-max) {
       margin-bottom: 16px;
@@ -158,4 +163,3 @@ padding: 100px 103px;
     transform: translate(-50%, -50%) translateY(61px);
   }
 }
-
